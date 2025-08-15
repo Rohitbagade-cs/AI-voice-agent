@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Voice Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎙️ AI Voice Agents Dashboard</h1>
+    <p>Powerful voice agents working together</p>
+    
+    <!-- Session info -->
+    <div class="session-info">
+      <p>Session ID: <span id="session-id">Loading...</span></p>
+      <button id="newSessionBtn">🔄 New Conversation</button>
+      <button id="clearHistoryBtn">🗑️ Clear History</button>
+    </div>
+    
+    <!-- Three-column layout -->
+    <!-- <div class="agents-grid"> -->
+      
+      <!-- AI Voice Agent -->
+      <!-- <div class="agent-card">
+        <h2>🎙️ AI Voice Agent</h2>
+        <p>Type your message and hear it spoken instantly</p>
+        
+        <textarea id="textInput" placeholder="Enter text here..."></textarea>
+        <button id="generateBtn">Generate Audio</button>
+
+        <div id="audioControls" style="display: none;">
+          <audio id="audioPlayer" controls></audio>
+          <br/>
+          <button id="playBtn">▶️ Play</button>
+          <button id="pauseBtn">⏸️ Pause</button>
+        </div>
+      </div> -->
+
+      <!-- Echo Bot -->
+      <!-- <div class="agent-card echo-bot">
+        <h2>🎧 Echo Bot</h2>
+        <p>Record your voice and play it back!</p>
+        
+        <button id="startBtn">🎙️ Start Recording</button>
+        <button id="stopBtn" disabled>⏹️ Stop Recording</button>
+        
+        <audio id="echoPlayer" controls style="display: none; margin: 15px 0;"></audio>
+        <p id="status" style="font-weight: bold; color: #00796b; margin: 10px 0;"></p> -->
+        
+        <!-- Transcript element -->
+        <!-- <div id="transcript-container" style="margin-top: 15px;">
+          <p id="transcription" style="font-weight: bold; background: #e8f5e8; padding: 10px; border-radius: 8px; display: none; border-left: 4px solid #00796b; font-size: 14px; color: black;"></p>
+        </div>
+      </div> -->
+
+      <!-- Conversational AI Bot -->
+      <div class="agent-card conversation-bot">
+        <h2>💬 Conversational AI</h2>
+        <p>Have a natural conversation with me!</p>
+        
+        <button id="convStartBtn">🎙️ Start Conversation</button>
+        <button id="convStopBtn" disabled>⏹️ Stop Recording</button>
+        <button id="autoRecordBtn" style="display: none;">🔄 Auto Recording: ON</button>
+        
+        <audio id="convPlayer" controls style="display: none; margin: 15px 0;"></audio>
+        <p id="convStatus" style="font-weight: bold; color: #00796b; margin: 10px 0;"></p>
+        
+        <!-- Conversation history -->
+        <div id="conversation-history" style="margin-top: 15px; max-height: 300px; overflow-y: auto;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
