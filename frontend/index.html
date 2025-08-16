@@ -9,8 +9,8 @@
 <body>
   <div class="container">
     <h1>🎙️ AI Voice Agents Dashboard</h1>
-    <p>Powerful voice agents working together</p>
-    
+    <p id="info">Powerful voice agent technology at your fingertips</p>
+
     <!-- Session info -->
     <div class="session-info">
       <p>Session ID: <span id="session-id">Loading...</span></p>
@@ -57,17 +57,17 @@
       <!-- Conversational AI Bot -->
       <div class="agent-card conversation-bot">
         <h2>💬 Conversational AI</h2>
-        <p>Have a natural conversation with me!</p>
+        <p style="font-size: 18px; margin-top: 0px; padding-bottom: 20px;">Have a natural conversation with me!</p>
         
         <button id="convStartBtn">🎙️ Start Conversation</button>
         <button id="convStopBtn" disabled>⏹️ Stop Recording</button>
         <button id="autoRecordBtn" style="display: none;">🔄 Auto Recording: ON</button>
         
         <audio id="convPlayer" controls style="display: none; margin: 15px 0;"></audio>
-        <p id="convStatus" style="font-weight: bold; color: #00796b; margin: 10px 0;"></p>
+        <p id="convStatus" style="font-weight: bold; color: #16C47F; margin: 10px 0; font-size: 18px"></p>
         
         <!-- Conversation history -->
-        <div id="conversation-history" style="margin-top: 15px; max-height: 300px; overflow-y: auto;">
+        <div id="conversation-history" style="margin-top: 15px; max-height: 500px; overflow-y: auto;">
         </div>
       </div>
 
